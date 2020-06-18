@@ -1,6 +1,7 @@
 package tw.edu.pu.edu.s1071483.bread;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class six extends AppCompatActivity {
         quantity = (EditText)findViewById(R.id.et1);
         Button back = (Button) findViewById(R.id.back);
         Button search = (Button)findViewById(R.id.search);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         search.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View arg0) {
