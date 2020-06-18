@@ -26,17 +26,29 @@ public class five extends AppCompatActivity {
                     int fq = Integer.parseInt(quantity.getEditableText().toString());
                     int sugar;
                     int flour;
+                    int milk;
+                    int salt;
+                    int cream;
                     TextView result = (TextView)findViewById(R.id.tv5);
-                    result.setText("鮮奶"+fq+"瓶");
+                    milk=fq*240;
+                    result.setText("鮮奶"+milk+"g");
 
 
                     TextView result1 = (TextView)findViewById(R.id.tv6);
-                    sugar=fq*20;
+                    sugar=fq*10;
                     result1.setText("糖"+sugar+"g");
 
                     TextView result2 = (TextView)findViewById(R.id.tv7);
-                    flour=fq*300;
+                    flour=fq*85;
                     result2.setText("麵粉"+flour+"g");
+
+                    TextView result3 = (TextView)findViewById(R.id.tv8);
+                    salt=fq*5;
+                    result3.setText("鹽"+salt+"g");
+
+                    TextView result4 = (TextView)findViewById(R.id.tv9);
+                    cream=fq*18;
+                    result4.setText("鹽"+cream+"g");
 
                 }
             }

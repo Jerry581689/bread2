@@ -26,9 +26,12 @@ public class one extends AppCompatActivity {
                     int fq = Integer.parseInt(quantity.getEditableText().toString());
                     int sugar;
                     int flour;
+                    int milkpowder;
+                    int cream;
+                    int eggyolk;
+                    int salt;
                     TextView result = (TextView)findViewById(R.id.tv5);
                     result.setText("菠蘿皮"+fq);
-
 
                     TextView result1 = (TextView)findViewById(R.id.tv6);
                     sugar=fq*60;
@@ -38,6 +41,21 @@ public class one extends AppCompatActivity {
                     flour=fq*110;
                     result2.setText("麵粉"+flour+"g");
 
+                    TextView result3 = (TextView)findViewById(R.id.tv8);
+                    milkpowder=fq*15;
+                    result3.setText("奶粉"+milkpowder+"g");
+
+                    TextView result4 = (TextView)findViewById(R.id.tv9);
+                    cream=fq*60;
+                    result4.setText("奶油"+cream+"g");
+
+                    TextView result5 = (TextView)findViewById(R.id.tv10);
+                    eggyolk=fq*40;
+                    result5.setText("蛋黃液"+eggyolk+"g");
+
+                    TextView result6 = (TextView)findViewById(R.id.tv11);
+                    salt=fq*3;
+                    result6.setText("鹽"+salt+"g");
                 }
             }
         });

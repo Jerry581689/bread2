@@ -5,75 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/store">
+    android:background="@drawable/store"
+    android:screenOrientation="portrait">
+
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="329dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="364dp"
+        android:layout_height="55dp"
         android:text="選擇您要製作的麵包"
-        android:textSize="36sp"
+        android:textColor="#040303"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <ImageButton
         android:id="@+id/one"
         android:layout_width="177dp"
         android:layout_height="130dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/adr" />
 
     <ImageButton
         android:id="@+id/two"
-        android:layout_width="168dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/one"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/croissant46723" />
 
     <ImageButton
         android:id="@+id/three"
-        android:layout_width="168dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="216dp"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:srcCompat="@drawable/cookies" />
 
     <ImageButton
         android:id="@+id/four"
-        android:layout_width="168dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="216dp"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toEndOf="@+id/three"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:srcCompat="@drawable/bread1" />
 
     <ImageButton
         android:id="@+id/five"
-        android:layout_width="168dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="360dp"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:srcCompat="@drawable/toast" />
 
     <ImageButton
@@ -81,11 +82,10 @@
         android:layout_width="168dp"
         android:layout_height="129dp"
         android:layout_marginStart="20dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginLeft="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toEndOf="@+id/five"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:srcCompat="@drawable/christmasheartcookie" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -93,6 +93,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="505dp" />
+        app:layout_constraintGuide_end="505dp"
+        app:layout_constraintGuide_percent="0.30"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="146dp"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="401dp"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="527dp"
+        app:layout_constraintGuide_percent="0.70"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="116dp"
+        app:layout_constraintGuide_percent="0.10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
